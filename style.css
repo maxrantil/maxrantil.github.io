@@ -9,12 +9,6 @@ body {
 	color: antiquewhite;
 	text-align: center;
 }
-h2,
-h3,
-h4 {
-	margin: 0;
-	padding: 10px;
-}
 .flex-items {
 	display: flex;
 	justify-content: center;
@@ -39,28 +33,16 @@ header {
 	align-items: center;
 	background-color: #7a1f00;
 }
-header img {
-	height: 100px;
-	padding-left: 10px;
-	flex-direction: row;
-}
 nav {
 	text-align: right;
 	flex-grow: 1;
 }
 a {
-	text-decoration: underline;
 	color: lightsalmon;
 }
 nav a {
 	display: inline-block;
 	padding: 10px 40px;
-}
-
-/*Contact*/
-
-#Contact {
-	height: 200px;
 }
 
 /*About*/
@@ -77,12 +59,7 @@ nav a {
 
 /*Copyright*/
 
-h5 {
-	display: block;
-	font-weight: lighter;
-}
 footer {
 	font-family: monospace;
   	text-align: right;
-	padding-left: 8px;
 }
