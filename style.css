@@ -26,23 +26,23 @@ body {
 header {
 	width: 100%;
 	position: fixed;
-	z-index: 1;
+	/* z-index: 1; */
 	height: 5.2vw;
 	border-top: 0.52vw solid lightsalmon;
 	border-bottom: 0.52vw solid lightsalmon;
 	align-items: center;
 	background-color: #7a1f00;
 }
-/* nav {
+nav {
 	text-align: right;
 	flex-grow: 1;
-} */
-/* a {
+}
+a {
 	color: lightsalmon;
 }
 nav a {
 	display: inline-block;
-} */
+}
 
 /*About*/
 
