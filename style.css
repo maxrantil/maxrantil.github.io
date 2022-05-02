@@ -11,7 +11,7 @@ body {
 }
 .flex-items {
 	display: flex;
-	/* justify-content: center; */
+	justify-content: center;
 	flex-wrap: wrap;
 }
 .main {
@@ -27,28 +27,27 @@ header {
 	width: 100%;
 	position: fixed;
 	z-index: 1;
-	height: 100px;
-	border-top: 10px solid lightsalmon;
-	border-bottom: 10px solid lightsalmon;
+	height: 5.2vw;
+	border-top: 0.52vw solid lightsalmon;
+	border-bottom: 0.52vw solid lightsalmon;
 	align-items: center;
 	background-color: #7a1f00;
 }
-nav {
+/* nav {
 	text-align: right;
 	flex-grow: 1;
-}
-a {
+} */
+/* a {
 	color: lightsalmon;
 }
 nav a {
 	display: inline-block;
-}
+} */
 
 /*About*/
 
 #about {
-	height: 700px;
-	padding-top: 0px;
+	height: 36vw;
 }
 #about .content {
 	margin: auto;
