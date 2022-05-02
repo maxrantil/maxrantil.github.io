@@ -4,20 +4,20 @@ body {
 	background-color: coral;
 	opacity: 0.9;
 	margin: 0;
-	font-size: 22px;
+	font-size: 1vw;
 	font-family: sans-serif;
 	color: antiquewhite;
 	text-align: center;
 }
 .flex-items {
 	display: flex;
-	justify-content: center;
+	/* justify-content: center; */
 	flex-wrap: wrap;
 }
 .main {
-	padding-top: 70px;
+	padding-top: 3.6vw;
 	opacity: 0.9;
-	width: 1200px;
+	width: 625vw;
 	margin: auto;
 }
 
@@ -42,7 +42,6 @@ a {
 }
 nav a {
 	display: inline-block;
-	padding: 10px 40px;
 }
 
 /*About*/
