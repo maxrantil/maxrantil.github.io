@@ -63,6 +63,18 @@ nav a {
 	height: 200px;
 }
 
+/*About*/
+
+#about {
+	height: 700px;
+	padding-top: 0px;
+}
+#about .content {
+	margin: auto;
+	background-color: #e03800;
+	width: 100%;
+}
+
 /*Copyright*/
 
 h5 {

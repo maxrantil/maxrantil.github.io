@@ -1,0 +1,43 @@
+<?php
+	header('Content-type: text/html');
+	session_start();
+?>
+<!DOCTYPE html>
+<html><head>
+   <title>Movie CENTER</title>
+   <link rel="stylesheet" type="text/css"href="style.css">
+</head>
+
+<body>
+	<header class="flex-items">
+        <img src="https://i.ibb.co/0nrTtwK/36c404636e1440c3b9fa549122d23b97.png">
+      <nav>
+		  <span><a href="index.php">Return<a></span>
+      </nav>
+   </header>
+   <img id="logo" src="https://i.ibb.co/0nrTtwK/36c404636e1440c3b9fa549122d23b97.png">
+   <br>
+   <br>
+   <p>Create or login</p>
+   <br>
+	<form action="create.php" method="POST">
+	Username: <input type="text" name="login" value ="" />
+		<br/>
+			Password: <input type="password" name="passwd" value =""/> 
+		<input type="submit" name="submit" value="OK"/>
+	</form>
+      <!--Contcact-->
+
+    <div id="Contact">
+         <h2></h2>
+         <h5></h5>
+         <h5></h5>
+    </div>
+
+       <!--Copyright-->
+
+    <footer>
+      <h5></h5>
+    </footer>
+</body>
+</html>
