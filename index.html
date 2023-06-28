@@ -7,70 +7,45 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             background-color: #f0f0f0;
         }
-        .header {
-            display: flex;
-            justify-content: space-between;
+        .container {
+            text-align: center;
             padding: 20px;
-            background-color: #333;
-            color: #fff;
-        }
-        .header h1 {
-            margin: 0;
-        }
-        .nav {
-            display: flex;
-            gap: 10px;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .section {
-            margin: 20px;
-        }
-        .card {
-            margin: 10px;
-            padding: 10px;
-            border: 1px solid #000;
-            border-radius: 5px;
-        }
-        @media (max-width: 600px) {
-            .card {
-                width: 100%;
-            }
+            max-width: 600px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="container">
         <h1>Max Rantil</h1>
-        <div class="nav">
-            <a href="#profile">Profile</a>
-            <a href="#contact">Contact</a>
-            <!-- Add more navigation links as needed -->
-        </div>
-    </div>
-
-    <div class="section" id="profile">
-        <h2>Profile</h2>
-        <div class="card">
-            <p>I am a Swedish software developer known for promoting collaboration and maintaining a positive attitude...</p>
-        </div>
-    </div>
-
-    <!-- Add more sections as needed -->
-
-    <div class="section" id="contact">
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: rantil@pm.me</p>
-            <p>Phone: +46 (0) 708 233 266</p>
-            <p>Location: Helsinki, Finland</p>
-            <p>GitHub: <a href="your-github-link">GitHub</a></p>
-            <p>LinkedIn: <a href="your-linkedin-link">LinkedIn</a></p>
-        </div>
+        <p>Junior Software Developer</p>
+        <p>Email: mailto:portfolio.yn79c@simplelogin.com</p>
+        <p>Location: Helsinki, Finland</p>
+        <p>GitHub: <a href="https://github.com/maxrantil">GitHub</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/maxrantil">LinkedIn</a></p>
+        <hr>
+        <p>Profile: I am a Swedish software developer known for promoting collaboration and maintaining a positive attitude...</p>
+        <hr>
+        <h2>Projects</h2>
+	<p><a href="https://github.com/maxrantil/42sh">Shell Creation Project</a>: The Shell Creation Project entailed developing a POSIX-compliant shell from scratch...</p>
+        <!-- Add more projects as needed -->
+        <hr>
+        <h2>Education</h2>
+        <p>Programming - Hive Helsinki, Finland: October 2021 - March 2023. Enhanced skills in collaboration and peer-to-peer knowledge exchange...</p>
+        <!-- Add more education as needed -->
+        <hr>
+        <h2>Work Experience</h2>
+        <p>Youth Worker - GBG Stad, Gothenburg, Sweden: June 2013 - August 2021. Encountered rewarding and challenging moments in my role, displaying endurance and patience...</p>
+        <!-- Add more jobs as needed -->
+        <hr>
+        <h2>Skills</h2>
+        <p>Endurance and Resilience, Patience, Optimism and Positive Attitude, Curiosity and Passion for Learning...</p>
+        <!-- Add more skills as needed -->
     </div>
 </body>
 </html>
