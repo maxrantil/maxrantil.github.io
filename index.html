@@ -2,279 +2,478 @@
 <html>
 
 <head>
-    <title>Max Rantil - Software Developer Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Max Rantil - Junior Software Developer based in Helsinki, Finland. Specializing in C, Bash Scripting, Python, and JavaScript. Check out my portfolio to see my projects and experiences.">
-    <meta name="keywords" content="Max Rantil, Software Developer, Junior Developer, Hive Helsinki, C Programming, Bash Scripting, Python, JavaScript, Portfolio">
-    <meta name="author" content="Max Rantil">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #f0f0f0;
-    }
-
-    .container {
-      text-align: center;
-      padding: 20px;
-      max-width: 600px;
-    }
-
-    h2 {
-      margin-top: 30px;
-    }
-
-    hr {
-      margin: 30px 0;
-    }
-
-    footer {
-      margin-top: 30px;
-    }
-
-    @media screen and (max-width: 600px) {
-      body {
-        font-size: 18px;
-      }
-
-      h1 {
-        font-size: 24px;
-      }
-
-      h2 {
-        font-size: 20px;
-      }
-    }
-  </style>
+  <title>Max Rantil - Software Developer Portfolio</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <header>
+    <nav>
+      <ul class="nav-left">
+        <li><a href="#maxrantil">Max Rantil</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#work-experience">Work Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="container">
-    <h1>Max Rantil</h1>
-    <p>Junior Software Developer</p>
-    <p><a href="mailto:portfolio.yn79c@simplelogin.com" title="Send an email to Max Rantil">Email</a></p>
-    <p><a href="https://github.com/maxrantil" title="Link to Max Rantil's GitHub profile">GitHub</a></p>
-    <p><a href="https://www.linkedin.com/in/maxrantil" title="Link to Max Rantil's LinkedIn profile">LinkedIn</a></p>
-    <p>Location: Helsinki, Finland</p>
+    <div id="maxrantil">
+      <br>
+      <br>
+      <p><a href="https://www.canva.com/design/DAFnGdFegCs/9V-Xdn7FXAdEoxji-CKHFw/view#1"
+          title="Watch my Resume">Resume</a> | <a href="mailto:portfolio.yn79c@simplelogin.com"
+          title="Send an email to Max Rantil">Email</a> | <a href="https://github.com/maxrantil"
+          title="Link to Max Rantil's GitHub profile">GitHub</a> | <a href="https://www.linkedin.com/in/maxrantil"
+          title="Link to Max Rantil's LinkedIn profile">LinkedIn</a></p>
+    </div>
+    <div id="about">
+      <hr>
+      <img src="./images/about.png" alt="about image" class="project-image">
+      <h2>About</h2>
+      <p>
+        I am Max Rantil, a dedicated and resilient software developer from Sweden, currently based in Helsinki, Finland.
+        I am a Hive Helsinki graduate, where I honed my skills in various programming languages and developed a deep
+        understanding of secure and reliable application development. My educational journey was marked by a significant
+        leadership role, where I led a diverse team to design and implement a complex shell application. This experience
+        not only showcased my ability to coordinate group efforts and meet project deadlines, but also highlighted my
+        problem-solving abilities and commitment to quality standards.
+      </p>
+      <p>
+        Beyond technical skills, I bring a collaborative spirit and a positive attitude to all my professional
+        engagements. I am known for my adaptability and my ability to align my approach to individual needs, a skill
+        that has been crucial in roles requiring understanding and addressing diverse perspectives and requirements. I am
+        also a proactive individual, always ready to take the initiative and carry out tasks independently when necessary.
+      </p>
+      <p>
+        I have a strong passion for continuous learning and I am always on the lookout for opportunities to expand my
+        knowledge, particularly in emerging technologies. My goal is to leverage my skills and experiences to make a
+        significant contribution to a dynamic software development team. I am excited about the possibility of bringing
+        my unique blend of skills and experiences to create impactful solutions in the tech industry.
+      </p>
+    </div>
     <hr>
-    <p>
-      <strong>Profile</strong>:
-      I am Max Rantil, a dedicated and resilient software developer from Sweden, currently based in Helsinki, Finland. I
-      am a Hive Helsinki graduate, where I honed my skills in various programming languages and developed a deep
-      understanding of secure and reliable application development. My educational journey was marked by a significant
-      leadership role, where I led a diverse team to design and implement a complex shell application. This experience
-      not only showcased my ability to coordinate group efforts and meet project deadlines, but also highlighted my
-      problem-solving abilities and commitment to quality standards.
-    </p>
-    <p>
-      Beyond technical skills, I bring a collaborative spirit and a positive attitude to all my professional
-      engagements. I am known for my adaptability and my ability to align my approach to individual needs, a skill that
-      has been crucial in roles requiring understanding and addressing diverse perspectives and requirements. I am also
-      a proactive individual, always ready to take the initiative and carry out tasks independently when necessary.
-    </p>
-    <p>
-      I have a strong passion for continuous learning and I am always on the lookout for opportunities to expand my
-      knowledge, particularly in emerging technologies. My goal is to leverage my skills and experiences to make a
-      significant contribution to a dynamic software development team. I am excited about the possibility of bringing my
-      unique blend of skills and experiences to create impactful solutions in the tech industry.
-    </p>
-
+    <div id="projects">
+      <h2>Projects</h2>
+      <p>
+        <a href="https://github.com/maxrantil/42sh">
+          <img src="./images/shell.png" alt="shell image" class="project-image">
+        </a>
+        <a href="https://github.com/maxrantil/42sh">Shell Creation Project</a>:
+        In this group project, we developed a POSIX-compliant shell from scratch.
+        This was a challenging task that required a deep understanding of Unix and POSIX functionalities,
+        including command execution, environment management, and interaction with shell variables.
+        We used C programming language for this project, and it helped me to improve my skills in system and network
+        administration, project management, and building complex systems.
+        The final product was a robust shell interpreter, 42sh, that supports a broad spectrum of UNIX and POSIX
+        functionalities.
+      </p>
+      <br>
+      <p>
+        <a href="https://github.com/maxrantil/roger-skyline-1">
+          <img src="./images/roger.png" alt="roger-skyline-1 image" class="project-image">
+        </a>
+        <a href="https://github.com/maxrantil/roger-skyline-1">Roger-Skyline-1</a>:
+        This project involved setting up a Linux-based server on a virtual machine, configuring system settings,
+        and installing the Artix operating system. Key tasks included establishing a secure shell (SSH),
+        configuring a firewall, implementing Fail2Ban, and setting up an Apache web server.
+        I also developed scripts for regular package updates and crontab monitoring, configured a local mail server,
+        and set up a static IP. This project showcased my skills in server setup, network administration, and security
+        measures.
+      </p>
+      <br>
+      <p>
+        <a href="https://github.com/maxrantil/ft_printf">
+          <img src="./images/ft_printf.png" alt="ft_printf image" class="project-image">
+        </a>
+        <a href="https://github.com/maxrantil/ft_printf">ft_printf</a>:
+        The ft_printf project involved recreating the printf function in C using a limited set of built-in C Library
+        functions.
+        The recreated function, ft_printf, supports various conversion specifiers, flags, field widths, precisions,
+        and length modifiers. This project served as a valuable exercise in understanding variadic functions in C
+        and provided a practical example of a basic "dispatcher" in C. It showcased my skills in working with low-level
+        functions, memory management, and complex function creation in C.
+      </p>
+      <br>
+      <p>
+        <a href="https://github.com/maxrantil/game_of_life">
+          <img src="./images/game_of_life.png" alt="game_of_life image" class="project-image">
+        </a>
+        <a href="https://github.com/maxrantil/game_of_life">Game of Life</a>:
+        The Game of Life project involved implementing Conway's Game of Life, a cellular automaton,
+        with an emphasis on optimizing the performance. The game operates on a two-dimensional grid of cells,
+        each transitioning between states based on its neighbors. In this group project we incorporated significant
+        optimizations, such as halting iterations upon detecting repeating patterns, using bitwise operations for efficient state
+        checks and predictions.
+        Additionally, we developed an interactive graphical user interface for the game, enhancing user engagement.
+        This project highlighted my skills in algorithm optimization, bitwise operations, and GUI development.
+      </p>
+      <br>
+      <p>
+        <a href="https://github.com/maxrantil/ft_ls">
+          <img src="./images/ft_ls.png" alt="ft_ls image" class="project-image">
+        </a>
+        <a href="https://github.com/maxrantil/ft_ls">ft_ls</a>:
+        The ft_ls project involved recreating the Unix 'ls' command, providing a deep dive into Unix file systems,
+        file permissions, and metadata. My version, ft_ls, supports options like long format listing, recursive listing,
+        hidden files inclusion, file order reversal, and sorting by modification time.
+        This project highlighted my proficiency in C programming, understanding of Unix systems,
+        and ability to handle complex data structures and system functions.
+      </p>
+      <br>
+      <p>
+        <a href="https://github.com/maxrantil/libft">
+          <img src="./images/libft.png" alt="libft image" class="project-image">
+        </a>
+        <a href="https://github.com/maxrantil/libft">libft</a>:
+        The Libft project was a foundational project in the 42 curriculum, requiring us to recreate several standard C
+        library functions from scratch.
+        The project served as an introduction to C programming, emphasizing the understanding of data types, control
+        structures, and basic algorithms. The recreated library, libft, includes a variety of functions, such as those for string
+        manipulation, memory allocation, and character checks, as well as more complex data structures like linked lists.
+        This project was instrumental in honing my skills in C programming, memory management, and algorithm
+        implementation, setting the stage for more advanced projects in the curriculum.
+      </p>
+      <button type="button" class="collapsible">Technologies that I have used</button>
+      <div class="content">
+        <h3>Programming Languages:</h3>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="20"
+              height="20">
+            C
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" target="_blank" rel="noopener noreferrer">
+            Bash Scripting
+          </a>,
+          <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+              width="20" height="20">
+            Python
+          </a>,
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" width="20" height="20">
+            JavaScript
+          </a>
+        </p>
+        <h3>Frameworks and Libraries:</h3>
+        <p>
+          <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+              width="20" height="20">
+            React
+          </a>,
+          <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"
+              width="20" height="20">
+            Node.js
+          </a>,
+          <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js"
+              width="20" height="20">
+            Express.js
+          </a>,
+          <a href="https://www.djangoproject.com/" target="_blank" rel="noopener noreferrer">
+            Django
+          </a>,
+          <a href="https://jestjs.io/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt="Jest" width="20"
+              height="20">
+            Jest
+          </a>,
+          <a href="https://testing-library.com/react" target="_blank" rel="noopener noreferrer">
+            React Testing Library
+          </a>,
+          <a href="https://www.cypress.io/" target="_blank" rel="noopener noreferrer">
+            Cypress
+          </a>,
+          <a href="https://www.npmjs.com/package/supertest" target="_blank" rel="noopener noreferrer">
+            Supertest
+          </a>
+        </p>
+        <h3>Web Technologies:</h3>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/HTML" target="_blank" rel="noopener noreferrer">HTML</a>,
+          <a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noopener noreferrer">CSS</a>,
+          <a href="https://httpd.apache.org/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" alt="Apache"
+              width="20" height="20"> Apache
+          </a>,
+          <a href="https://www.nginx.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" alt="Nginx"
+              width="20" height="20"> Nginx
+          </a>
+        </p>
+        <h3>Operating Systems:</h3>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Unix" target="_blank" rel="noopener noreferrer">
+            Unix
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/Linux" target="_blank" rel="noopener noreferrer">
+            Linux
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/Microsoft_Windows" target="_blank" rel="noopener noreferrer">
+            Windows
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/MacOS" target="_blank" rel="noopener noreferrer">
+            MacOS
+          </a>
+        </p>
+        <h3>Databases:</h3>
+        <p>
+          <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"
+              width="20" height="20">
+            MySQL
+          </a>,
+          <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"
+              width="20" height="20">
+            MongoDB
+          </a>,
+          <a href="https://www.postgresql.org/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" width="20" height="20">
+            PostgreSQL
+          </a>
+        </p>
+        <h3>Other Tools:</h3>
+        <p>
+          <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="20"
+              height="20">
+            Git
+          </a>,
+          <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"
+              width="20" height="20">
+            Docker
+          </a>,
+          <a href="https://www.gnu.org/software/gdb/" target="_blank" rel="noopener noreferrer">
+            gdb
+          </a>,
+          <a href="https://lldb.llvm.org/" target="_blank" rel="noopener noreferrer">
+            lldb
+          </a>,
+          <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg"
+              alt="Visual Studio Code" width="20" height="20">
+            Visual Studio Code
+          </a>,
+        <p>
+          <a href="https://www.vim.org/" target="_blank" rel="noopener noreferrer">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg" alt="Vim" width="20"
+              height="20">
+            Vim
+          </a>,
+          <a href="https://www.openssh.com/" target="_blank" rel="noopener noreferrer">
+            SSH
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/POSIX" target="_blank" rel="noopener noreferrer">
+            POSIX
+          </a>,
+          <a href="https://www.fail2ban.org/wiki/index.php/Main_Page" target="_blank" rel="noopener noreferrer">
+            Fail2Ban
+          </a>,
+          <a href="https://openai.com/research/" target="_blank" rel="noopener noreferrer">
+            A.I. Prompt Engineering
+          </a>
+        </p>
+        </p>
+        <h3>Concepts and Techniques:</h3>
+        <p>
+          <a href="https://en.wikipedia.org/wiki/Memory_management" target="_blank" rel="noopener noreferrer">
+            Memory Management
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/Data_structure" target="_blank" rel="noopener noreferrer">
+            Data Structures
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/Algorithm" target="_blank" rel="noopener noreferrer">
+            Algorithm Implementation
+          </a>,
+          <a href="https://en.wikipedia.org/wiki/Bitwise_operation" target="_blank" rel="noopener noreferrer">
+            Bitwise Operations
+          </a>
+        </p>
+      </div>
+    </div>
     <hr>
-    <h2>Projects</h2>
-    <p>
-      <a href="https://github.com/maxrantil/42sh">Shell Creation Project</a>:
-      In this project, I developed a POSIX-compliant shell from scratch.
-      This was a challenging task that required a deep understanding of Unix and POSIX functionalities,
-      including command execution, environment management, and interaction with shell variables.
-      I used C programming language for this project, and it helped me to improve my skills in system and network
-      administration,
-      project management, and building complex systems.
-      The final product was a robust shell interpreter, 42sh, that supports a broad spectrum of UNIX and POSIX
-      functionalities.
-    </p>
-    <p>
-      <a href="https://github.com/maxrantil/roger-skyline-1">Roger-Skyline-1</a>:
-      This project involved setting up a Linux-based server on a virtual machine, configuring system settings,
-      and installing the Artix operating system. Key tasks included establishing a secure shell (SSH),
-      configuring a firewall, implementing Fail2Ban, and setting up an Apache web server.
-      I also developed scripts for regular package updates and crontab monitoring, configured a local mail server,
-      and set up a static IP. This project showcased my skills in server setup, network administration, and security
-      measures.
-    </p>
-    <p>
-      <a href="https://github.com/maxrantil/ft_printf">ft_printf</a>:
-      The ft_printf project involved recreating the printf function in C using a limited set of built-in C Library
-      functions.
-      The recreated function, ft_printf, supports various conversion specifiers, flags, field widths, precisions,
-      and length modifiers. This project served as a valuable exercise in understanding variadic functions in C
-      and provided a practical example of a basic "dispatcher" in C. It showcased my skills in working with low-level
-      functions,
-      memory management, and complex function creation in C.
-    </p>
-    <p>
-      <a href="https://github.com/maxrantil/game-of-life">Game of Life</a>:
-      The Game of Life project involved implementing Conway's Game of Life, a cellular automaton,
-      with an emphasis on optimizing the performance. The game operates on a two-dimensional grid of cells,
-      each transitioning between states based on its neighbors. In this group project we incorporated significant
-      optimizations,
-      such as halting iterations upon detecting repeating patterns, using bitwise operations for efficient state checks
-      and predictions.
-      Additionally, we developed an interactive graphical user interface for the game, enhancing user engagement.
-      This project highlighted my skills in algorithm optimization, bitwise operations, and GUI development.
-    </p>
-    <p>
-      <a href="https://github.com/maxrantil/ft_ls">ft_ls</a>:
-      The ft_ls project involved recreating the Unix 'ls' command, providing a deep dive into Unix file systems,
-      file permissions, and metadata. My version, ft_ls, supports options like long format listing, recursive listing,
-      hidden files inclusion, file order reversal, and sorting by modification time.
-      This project highlighted my proficiency in C programming, understanding of Unix systems,
-      and ability to handle complex data structures and system functions.
-    </p>
-    <p>
-      <a href="https://github.com/maxrantil/libft">libft</a>:
-      The Libft project was a foundational project in the 42 curriculum, requiring us to recreate several standard C
-      library functions from scratch.
-      The project served as an introduction to C programming, emphasizing the understanding of data types, control
-      structures,
-      and basic algorithms. The recreated library, libft, includes a variety of functions, such as those for string
-      manipulation, memory allocation, and character checks, as well as more complex data structures like linked lists.
-      This project was instrumental in honing my skills in C programming, memory management, and algorithm
-      implementation, setting the stage for more advanced projects in the curriculum.
-    </p>
+    <div id="education">
+      <h2>Education</h2>
+      <img src="./images/education.png" alt="education image" class="project-image">
+      <p>
+        <strong>Programming - Hive Helsinki, Finland (October 2021 - March 2023)</strong>:
+        At Hive Helsinki, I enhanced my skills in collaboration and peer-to-peer knowledge exchange.
+        I developed strong problem-solving abilities and self-reliance.
+        I gained practical experience through exposure to real-world scenarios and challenges.
+        I built a robust portfolio, showcasing the practical application of theoretical knowledge.
+      </p>
+
+      These descriptions provide more detail about what each role and education experience involved, what skills you
+      used and developed, and what you achieved. You can adjust these descriptions as needed to better reflect your
+      experience and the specifics of each role and education experience.
+    </div>
     <hr>
-    <h2>Education</h2>
+    <div id="work-experience">
+      <h2>Work Experience</h2>
+      <img src="./images/work_experience.png" alt="work-experience image" class="project-image">
+      <p>
+        <strong>Youth Worker - GBG Stad, Gothenburg, Sweden (June 2013 - August 2021)</strong>:
+        In this role, I encountered rewarding and challenging moments, displaying endurance and patience.
+        I applied an optimistic outlook, contributing to a positive and uplifting environment.
+        My curiosity-fueled learning led to a deep understanding of unique perspectives and requirements.
+        I displayed empathetic support, constantly aligning my approach to individual needs.
+      </p>
 
-    <p>
-      <strong>Programming - Hive Helsinki, Finland (October 2021 - March 2023)</strong>:
-      At Hive Helsinki, I enhanced my skills in collaboration and peer-to-peer knowledge exchange.
-      I developed strong problem-solving abilities and self-reliance.
-      I gained practical experience through exposure to real-world scenarios and challenges.
-      I built a robust portfolio, showcasing the practical application of theoretical knowledge.
-    </p>
+      <p>
+        <strong>Exhibition Technician - Hasselblad Art Museum, Gothenburg, Sweden (May 2008 - September 2013)</strong>:
+        In this role, I skillfully fused artistry and workmanship, bringing artists' visions to life.
+        I exhibited an easy-to-work-with demeanor, understanding the fluid nature of project work.
+        I adapted and coordinated effectively within team settings, demonstrating flexibility and dedication.
+        I persisted in delivering justice and responsibility to the exhibits, going beyond mere adherence to procedures.
+      </p>
 
-    These descriptions provide more detail about what each role and education experience involved, what skills you used
-    and developed, and what you achieved. You can adjust these descriptions as needed to better reflect your experience
-    and the specifics of each role and education experience.
+      <p>
+        <strong>Freelance Photographer (June 2012 - March 2018)</strong>:
+        As a freelance photographer, I created visual narratives for artistic exhibitions, commercial projects, and
+        photographic books.
+        I orchestrated self-publishing projects, managing end-to-end processes from concept creation to distribution.
+        I showcased resilience and adaptability during challenging assignments.
+      </p>
 
+      <button type="button" class="collapsible">Soft Skills</button>
+      <div class="content">
+        <h2>Soft Skills</h2>
+
+        <p>
+          <strong>Endurance and Resilience</strong>:
+          I have demonstrated endurance and resilience in various professional settings,
+          particularly in my role as a Youth Worker where I encountered rewarding and challenging moments.
+        </p>
+
+        <p>
+          <strong>Patience</strong>:
+          Patience has been a key skill in my work, especially when dealing with diverse groups of people
+          and in situations that require a calm and steady approach.
+        </p>
+
+        <p>
+          <strong>Optimism and Positive Attitude</strong>:
+          I maintain an optimistic outlook and a positive attitude, which contributes to a positive and uplifting
+          environment in any team or project I am part of.
+        </p>
+
+        <p>
+          <strong>Curiosity and Passion for Learning</strong>:
+          I have a strong passion for learning and strive to expand my knowledge in emerging technologies.
+          My curiosity drives me to constantly explore new concepts and ideas.
+        </p>
+
+        <p>
+          <strong>Empathy</strong>:
+          I display empathetic support in my interactions, aligning my approach to individual needs.
+          This skill has been particularly useful in my role as a Youth Worker.
+        </p>
+
+        <p>
+          <strong>Ability to Align Approach to Individual Needs and Adaptability</strong>:
+          I am adaptable and able to align my approach to meet individual needs,
+          a skill that has been crucial in roles that require understanding and addressing diverse perspectives and
+          requirements.
+        </p>
+
+        <p>
+          <strong>Collaboration and Ability to Coordinate Group Efforts</strong>:
+          I am known for promoting collaboration and have experience coordinating group efforts,
+          particularly during my education at Hive Helsinki where I led a diverse team for four months.
+        </p>
+
+        <p>
+          <strong>Leadership</strong>:
+          I have demonstrated leadership skills in various settings,
+          including during my education when I was entrusted with the leadership of a diverse team for a complex
+          project.
+        </p>
+
+        <p>
+          <strong>Meeting Deadlines and Upholding Quality Standards</strong>:
+          I am committed to meeting deadlines and upholding quality standards,
+          ensuring that all tasks and projects are completed efficiently and effectively.
+        </p>
+
+        <p>
+          <strong>Proactive Nature and Self-reliance</strong>:
+          I am proactive and self-reliant, always ready to take the initiative and carry out tasks independently when
+          necessary.
+        </p>
+
+        <p>
+          <strong>Flexibility and Easy-to-work-with Demeanor</strong>:
+          I am flexible and easy to work with, able to adapt to changing circumstances and work effectively within a
+          team.
+        </p>
+
+        <p>
+          <strong>Dedication and Responsibility</strong>:
+          I am dedicated and responsible, committed to delivering the best results in all tasks and projects I
+          undertake.
+        </p>
+
+        <p>
+          <strong>Problem-solving Abilities</strong>:
+          I have strong problem-solving abilities, developed through practical experience and academic study.
+          I am able to tackle complex problems and find effective solutions.
+        </p>
+      </div>
+    </div>
     <hr>
-    <h2>Work Experience</h2>
-
-    <p>
-      <strong>Youth Worker - GBG Stad, Gothenburg, Sweden (June 2013 - August 2021)</strong>:
-      In this role, I encountered rewarding and challenging moments, displaying endurance and patience.
-      I applied an optimistic outlook, contributing to a positive and uplifting environment.
-      My curiosity-fueled learning led to a deep understanding of unique perspectives and requirements.
-      I displayed empathetic support, constantly aligning my approach to individual needs.
-    </p>
-
-    <p>
-      <strong>Exhibition Technician - Hasselblad Art Museum, Gothenburg, Sweden (May 2008 - September 2013)</strong>:
-      In this role, I skillfully fused artistry and workmanship, bringing artists' visions to life.
-      I exhibited an easy-to-work-with demeanor, understanding the fluid nature of project work.
-      I adapted and coordinated effectively within team settings, demonstrating flexibility and dedication.
-      I persisted in delivering justice and responsibility to the exhibits, going beyond mere adherence to procedures.
-    </p>
-
-    <p>
-      <strong>Freelance Photographer (June 2012 - March 2018)</strong>:
-      As a freelance photographer, I created visual narratives for artistic exhibitions, commercial projects, and
-      photographic books.
-      I orchestrated self-publishing projects, managing end-to-end processes from concept creation to distribution.
-      I showcased resilience and adaptability during challenging assignments.
-    </p>
-    <hr>
-    <h2>Soft Skills</h2>
-
-    <p>
-      <strong>Endurance and Resilience</strong>:
-      I have demonstrated endurance and resilience in various professional settings,
-      particularly in my role as a Youth Worker where I encountered rewarding and challenging moments.
-    </p>
-
-    <p>
-      <strong>Patience</strong>:
-      Patience has been a key skill in my work, especially when dealing with diverse groups of people
-      and in situations that require a calm and steady approach.
-    </p>
-
-    <p>
-      <strong>Optimism and Positive Attitude</strong>:
-      I maintain an optimistic outlook and a positive attitude, which contributes to a positive and uplifting
-      environment
-      in any team or project I am part of.
-    </p>
-
-    <p>
-      <strong>Curiosity and Passion for Learning</strong>:
-      I have a strong passion for learning and strive to expand my knowledge in emerging technologies.
-      My curiosity drives me to constantly explore new concepts and ideas.
-    </p>
-
-    <p>
-      <strong>Empathy</strong>:
-      I display empathetic support in my interactions, aligning my approach to individual needs.
-      This skill has been particularly useful in my role as a Youth Worker.
-    </p>
-
-    <p>
-      <strong>Ability to Align Approach to Individual Needs and Adaptability</strong>:
-      I am adaptable and able to align my approach to meet individual needs,
-      a skill that has been crucial in roles that require understanding and addressing diverse perspectives and
-      requirements.
-    </p>
-
-    <p>
-      <strong>Collaboration and Ability to Coordinate Group Efforts</strong>:
-      I am known for promoting collaboration and have experience coordinating group efforts,
-      particularly during my education at Hive Helsinki where I led a diverse team for four months.
-    </p>
-
-    <p>
-      <strong>Leadership</strong>:
-      I have demonstrated leadership skills in various settings,
-      including during my education when I was entrusted with the leadership of a diverse team for a complex project.
-    </p>
-
-    <p>
-      <strong>Meeting Deadlines and Upholding Quality Standards</strong>:
-      I am committed to meeting deadlines and upholding quality standards,
-      ensuring that all tasks and projects are completed efficiently and effectively.
-    </p>
-
-    <p>
-      <strong>Proactive Nature and Self-reliance</strong>:
-      I am proactive and self-reliant, always ready to take the initiative and carry out tasks independently when
-      necessary.
-    </p>
-
-    <p>
-      <strong>Flexibility and Easy-to-work-with Demeanor</strong>:
-      I am flexible and easy to work with, able to adapt to changing circumstances and work effectively within a team.
-    </p>
-
-    <p>
-      <strong>Dedication and Responsibility</strong>:
-      I am dedicated and responsible, committed to delivering the best results in all tasks and projects I undertake.
-    </p>
-
-    <p>
-      <strong>Problem-solving Abilities</strong>:
-      I have strong problem-solving abilities, developed through practical experience and academic study.
-      I am able to tackle complex problems and find effective solutions.
-    </p>
-    <hr>
-    <footer>
+    <footer if="contact">
       <p>Contact: <a href="mailto:portfolio.yn79c@simplelogin.com" title="Send an email to Max Rantil">Email</a> | <a
           href="https://github.com/maxrantil" title="Link to Max Rantil's GitHub profile">GitHub</a> | <a
           href="https://www.linkedin.com/in/maxrantil" title="Link to Max Rantil's LinkedIn profile">LinkedIn</a></p>
     </footer>
   </div>
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+  <script>
+    function adjustScrollPosition() {
+      window.scrollBy(0, -40); // Adjust this value to match your header's height
+    }
+
+    window.addEventListener("hashchange", adjustScrollPosition);
+    window.addEventListener("load", adjustScrollPosition);
+
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.location.hash = ''; // Remove the current hash
+        window.location.hash = this.getAttribute('href');
+      });
+    });
+  </script>
 </body>
 
 </html>

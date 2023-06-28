@@ -1,0 +1,125 @@
+body {
+  font-family: 'Courier New', monospace; /* Use a monospace font */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Change background to a dark color */
+  color: #f0f0f0; /* Change text color to a light color */
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #555; /* Change header background to a darker color */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Add this line */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-left,
+.nav-right {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-left li,
+.nav-right li {
+  margin: 0 10px;
+}
+
+.nav-left li a,
+.nav-right li a {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-left li a:hover,
+.nav-right li a:hover {
+  color: #fff;
+}
+
+section {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  max-width: 600px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 12px 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 8px;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible.active {
+  background-color: #555;
+}
+
+.content {
+  padding: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #444; /* Change content background to a darker color */
+  max-height: 0;
+  color: #f0f0f0; /* Change content text color to a light color */
+}
+
+.content p {
+  margin: 8px 0;
+  padding: 0 18px;
+}
+
+.project-image {
+  width: 512 px;
+  height: 384 px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
