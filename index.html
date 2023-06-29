@@ -18,10 +18,12 @@
   <header>
     <nav>
       <ul class="nav-left">
-        <li><a href="#maxrantil">Contact</a></li>
+        <div class="profile-image">
+          <li><a href="#home"><img src="./images/profile_small.jpg" alt="profile"></a></li>
+        </div>
       </ul>
       <ul class="nav-right">
-        <li><a href="#maxrantil">About</a></li>
+        <li><a href="#home">About</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#work-experience">Work Experience</a></li>
@@ -30,18 +32,18 @@
   </header>
 
   <div class="container">
-    <div id="maxrantil">
+    <div id="home">
       <br>
       <br>
-      <p><a href="https://www.canva.com/design/DAFnGdFegCs/9V-Xdn7FXAdEoxji-CKHFw/view#1"
-          title="Watch my Resume">Resume</a> | <a href="mailto:portfolio.yn79c@simplelogin.com"
-          title="Send an email to Max Rantil">Email</a> | <a href="https://github.com/maxrantil"
-          title="Link to Max Rantil's GitHub profile">GitHub</a> | <a href="https://www.linkedin.com/in/maxrantil"
-          title="Link to Max Rantil's LinkedIn profile">LinkedIn</a></p>
+      <p>Contact: <a href="mailto:portfolio.yn79c@simplelogin.com" title="Send an email to Max Rantil">Email</a> | <a
+          href="https://github.com/maxrantil" title="Link to Max Rantil's GitHub profile">GitHub</a> | <a
+          href="https://www.linkedin.com/in/maxrantil" title="Link to Max Rantil's LinkedIn profile">LinkedIn</a> | <a
+          href="https://www.canva.com/design/DAFnGdFegCs/9V-Xdn7FXAdEoxji-CKHFw/view#1"
+          title="Watch my Resume">Resume</a></p>
     </div>
     <div id="about">
       <hr>
-      <img src="./images/about.png" alt="about image" class="project-image">
+      <!-- <img src="./images/about.png" alt="about image" class="section-image"> -->
       <h2>About</h2>
       <p>
         I am Max Rantil, a dedicated and resilient software developer from Sweden, currently based in Helsinki, Finland.
@@ -157,7 +159,7 @@
         </p>
       </div>
     </div>
-    <button type="button" class="collapsible">Technologies that I have used</button>
+    <button type="button" class="collapsible">Technologies</button>
     <div class="content">
       <h3>Programming Languages:</h3>
       <p>
@@ -327,7 +329,7 @@
     <hr>
     <div id="education">
       <h2>Education</h2>
-      <img src="./images/education.png" alt="education image" class="project-image">
+      <img src="./images/education.png" alt="education image" class="section-image">
       <p>
         <strong>Programming - Hive Helsinki, Finland (October 2021 - March 2023)</strong>:
         At Hive Helsinki, I enhanced my skills in collaboration and peer-to-peer knowledge exchange.
@@ -341,11 +343,11 @@
       experience and the specifics of each role and education experience.
     </div>
     <hr>
-    <div id="work-experience">
+    <div>
       <h2>Work Experience</h2>
-      <img src="./images/work_experience.png" alt="work-experience image" class="project-image">
+      <!-- <img src="./images/work_experience.png" alt="work-experience image" class="section-image"> -->
       <p>
-        <strong>Youth Worker - GBG Stad, Gothenburg, Sweden (June 2013 - August 2021)</strong>:
+        <strong>Youth Worker - GBG Stad, Sweden (June 2013 - August 2021)</strong>:
         In this role, I encountered rewarding and challenging moments, displaying endurance and patience.
         I applied an optimistic outlook, contributing to a positive and uplifting environment.
         My curiosity-fueled learning led to a deep understanding of unique perspectives and requirements.
@@ -353,7 +355,7 @@
       </p>
 
       <p>
-        <strong>Exhibition Technician - Hasselblad Art Museum, Gothenburg, Sweden (May 2008 - September 2013)</strong>:
+        <strong>Exhibition Technician - Hasselblad Foundation, Sweden (May 2008 - September 2013)</strong>:
         In this role, I skillfully fused artistry and workmanship, bringing artists' visions to life.
         I exhibited an easy-to-work-with demeanor, understanding the fluid nature of project work.
         I adapted and coordinated effectively within team settings, demonstrating flexibility and dedication.
@@ -454,10 +456,12 @@
       </div>
     </div>
     <hr>
-    <footer>
+    <footer id="work-experience">
       <p>Contact: <a href="mailto:portfolio.yn79c@simplelogin.com" title="Send an email to Max Rantil">Email</a> | <a
           href="https://github.com/maxrantil" title="Link to Max Rantil's GitHub profile">GitHub</a> | <a
-          href="https://www.linkedin.com/in/maxrantil" title="Link to Max Rantil's LinkedIn profile">LinkedIn</a></p>
+          href="https://www.linkedin.com/in/maxrantil" title="Link to Max Rantil's LinkedIn profile">LinkedIn</a> | <a
+          href="https://www.canva.com/design/DAFnGdFegCs/9V-Xdn7FXAdEoxji-CKHFw/view#1"
+          title="Watch my Resume">Resume</a></p>
     </footer>
   </div>
   <script>
@@ -490,6 +494,11 @@
         window.location.hash = this.getAttribute('href');
       });
     });
+
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    }
+
   </script>
 </body>
 

@@ -1,12 +1,12 @@
 body {
-  font-family: 'Courier New', monospace; /* Use a monospace font */
+  font-family: 'Courier New', monospace;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333; /* Change background to a dark color */
-  color: #f0f0f0; /* Change text color to a light color */
+  background-color: #333;
+  color: #f0f0f0;
 }
 
 header {
@@ -14,15 +14,20 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #555; /* Change header background to a darker color */
-  padding: 20px;
+  background-color: #555;
+  padding-top: 7px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box; /* Add this line */
+  box-sizing: border-box;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
+}
+
+.profile-image img {
+  height: 40px;
+  border-radius: 50%;
 }
 
 .nav-left,
@@ -33,9 +38,21 @@ nav {
   display: flex;
 }
 
-.nav-left li,
+.nav-left {
+  padding-right: 20px;
+}
+
+.nav-right {
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.nav-left li {
+  margin: 0px 36px;
+}
+
 .nav-right li {
-  margin: 0 10px;
+  margin: 0px 21px;
 }
 
 .nav-left li a,
@@ -59,7 +76,7 @@ section {
 .container {
   text-align: center;
   padding: 20px;
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -69,13 +86,14 @@ h2 {
 }
 
 .collapsible {
-  background-color: #777;
-  color: white;
+  background-color: #999999;
+  color: rgb(0, 0, 255);
+  text-decoration: underline;
   cursor: pointer;
-  padding: 12px 18px;
+  height: 50px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center !important;
   outline: none;
   font-size: 16px;
   transition: background-color 0.3s ease;
@@ -94,9 +112,9 @@ h2 {
   padding: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #444; /* Change content background to a darker color */
+  background-color: #444;
   max-height: 0;
-  color: #f0f0f0; /* Change content text color to a light color */
+  color: #f0f0f0;
 }
 
 .content p {
@@ -105,8 +123,8 @@ h2 {
 }
 
 .project-image {
-  width: 512 px;
-  height: 384 px;
+  width: 409px;
+  height: 227px;
   display: block;
   margin: 0 auto;
 }
@@ -114,29 +132,27 @@ h2 {
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   grid-gap: 20px;
-  margin: 0 auto;
 }
 
 .project {
   text-align: center;
-  margin: 0 auto;
-}
-
-.project-image {
-  width: 100%;
-  height: 100%;
-  display: block;
-  margin: 0 auto;
 }
 
 .project-container {
   text-align: center;
   padding: 20px;
-  max-width: 90%; /* Adjust this value as needed */
+  max-width: 90%;
   margin: 0 auto;
 }
 
+.section-image {
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 600px) {
   body {
