@@ -167,3 +167,24 @@ h2 {
     font-size: 20px;
   }
 }
+
+/* For screens smaller than 1200px wide, set the padding to 10% */
+@media (max-width: 1200px) {
+  body {
+    padding: 0 10%;
+  }
+}
+
+/* For screens smaller than 800px wide, set the padding to 5% */
+@media (max-width: 800px) {
+  body {
+    padding: 0 5%;
+  }
+}
+
+/* For screens smaller than 600px wide, set the padding to 2% */
+@media (max-width: 600px) {
+  body {
+    padding: 0 2%;
+  }
+}
