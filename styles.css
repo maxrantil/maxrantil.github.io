@@ -154,9 +154,46 @@ h2 {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 1200px) {
+  body {
+    padding: 0 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-image,
+  .section-image {
+    width: 70%;
+    height: auto;
+  }
+
+  body {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+  }
+
+  .nav-left li,
+  .nav-right li {
+    margin: 10px 0;
+  }
+
   body {
     font-size: 18px;
+    padding: 0 2%;
   }
 
   h1 {
@@ -165,26 +202,5 @@ h2 {
 
   h2 {
     font-size: 20px;
-  }
-}
-
-/* For screens smaller than 1200px wide, set the padding to 10% */
-@media (max-width: 1200px) {
-  body {
-    padding: 0 10%;
-  }
-}
-
-/* For screens smaller than 800px wide, set the padding to 5% */
-@media (max-width: 800px) {
-  body {
-    padding: 0 5%;
-  }
-}
-
-/* For screens smaller than 600px wide, set the padding to 2% */
-@media (max-width: 600px) {
-  body {
-    padding: 0 2%;
   }
 }
