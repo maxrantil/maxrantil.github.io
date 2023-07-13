@@ -158,6 +158,14 @@ ul {
   margin: 0 auto;
 }
 
+.copyright {
+  text-align: center;
+  /* padding: 20px; */
+  /* max-width: 800px; */
+  margin: 0 auto;
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   body {
     padding: 0 10%;
