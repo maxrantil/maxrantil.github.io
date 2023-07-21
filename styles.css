@@ -1,9 +1,9 @@
 :root {
-  --color-bg-variant: #1A202C; /* Changed for better contrast */
-  --color-primary: #2D3748; /* Changed for better contrast */
-  --color-font: #EDF2F7; /* Changed for better contrast */
-  --color-link: #38B2AC; /* Changed for better contrast */
-  --color-link-hover: #2C7A7B; /* Changed for better contrast */
+  --color-bg-variant: #1A202C;
+  --color-primary: #2D3748;
+  --color-font: #EDF2F7;
+  --color-link: #38B2AC;
+  --color-link-hover: #2C7A7B;
   --color-link-focus: #2C7A7B;
   --font-size-base: 1rem; /* 16px */
   --font-size-large: 2rem; /* 32px */
@@ -22,7 +22,7 @@ body {
   align-items: center;
   background-color: var(--color-bg-variant);
   color: var(--color-font);
-  line-height: 1.6; /* Added for better readability */
+  line-height: 1.8;
 }
 
 header {
