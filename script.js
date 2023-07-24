@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
       switch (id) {
         case "home":
-        case "work-experience":
           topOffset = 40;
           break;
         case "education":
@@ -38,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
           break;
         case "projects":
           topOffset = 110;
+          break;
+        case "work-experience":
+          topOffset = 60;
           break;
         default:
           topOffset = 40;
