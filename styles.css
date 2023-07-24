@@ -3,7 +3,7 @@
   --color-primary: #2D3748;
   --color-font: #EDF2F7;
   --color-link: #38B2AC;
-  --color-link-hover: #2C7A7B;
+  --color-link-hover: #389697;
   --color-link-focus: #2C7A7B;
   --font-size-base: 1rem; /* 16px */
   --font-size-large: 2rem; /* 32px */
@@ -47,7 +47,9 @@ html {
 
 .profile-image img {
   height: 2.5em;
-  border-radius: 50%;
+  border-radius: 60%;
+  margin-top: -0.5em;
+  transform: translateY(20%);
 }
 
 nav {
@@ -70,7 +72,7 @@ nav {
 
 .nav-right {
   padding-left: 1.25em;
-  padding-top: 0.625em;
+  padding-top: 0.225em;
   margin-left: auto;
 }
 
@@ -98,7 +100,6 @@ nav {
 .nav-right li a:focus {
   color: var(--color-link-hover);
   outline: none;
-  /* outline: 1px solid var(--color-link-focus); */ /* Clear focus style */
 }
 
 .nav-icon {
