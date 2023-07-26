@@ -114,8 +114,6 @@ nav {
   .nav-right {
     position: absolute;
     right: 0;
-    /* height: 10vh; */
-    /* width: 19vh; */
     top: 5.3vh;
     width: 30%;
     height: 30%;
@@ -205,6 +203,19 @@ ul {
   padding: 0 1.125em;
 }
 
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.project-image:hover {
+  animation: bounce 0.6s forwards;
+}
+
 .project-image {
   width: 22.5em;
   height: 14.1875em;
@@ -243,42 +254,36 @@ ul {
   font-size: 0.625em;
 }
 
-/* For screens smaller than 540px wide */
 @media (max-width: 539.98px) {
   body {
     padding: 0 var(--padding-base);
   }
 }
 
-/* For screens between 540px and 575px wide */
 @media (min-width: 540px) and (max-width: 575.98px) {
   body {
     padding: 0 calc(var(--padding-base) * 1.25);
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   body {
     padding: 0 calc(var(--padding-base) * 1.5);
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   body {
     padding: 0 calc(var(--padding-base) * 2);
   }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   body {
     padding: 0 calc(var(--padding-base) * 3);
   }
 }
 
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
     padding: 0 calc(var(--padding-base) * 4);
