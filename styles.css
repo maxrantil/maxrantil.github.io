@@ -1,20 +1,15 @@
 :root {
-  --color-bg-variant: #1A202C;
+  --color-bg: #1A202C;
   --color-primary: #2D3748;
   --color-font: #EDF2F7;
   --color-link: #38B2AC;
   --color-link-hover: #389697;
   --color-link-focus: #2C7A7B;
   --font-size-base: 1rem;
-  /* 16px */
   --font-size-large: 2rem;
-  /* 32px */
   --font-size-small: 0.75rem;
-  /* 12px */
   --padding-base: 1rem;
-  /* 16px */
   --max-width-large: 47.5rem;
-  /* 760px */
   --primary-font: 'Helvetica Neue', sans-serif;
   --secondary-font: 'Georgia', serif;
 }
@@ -36,7 +31,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: var(--primary-font);
-  background-color: var(--color-bg-variant);
+  background-color: var(--color-bg);
   color: var(--color-font);
   line-height: 1.6;
   width: 100%;
@@ -126,7 +121,7 @@ nav {
     height: 30%;
     min-height: 130px;
     min-width: 200px;
-    background-color: var(--color-bg-variant);
+    background-color: var(--color-bg);
     flex-direction: column;
     clip-path: circle(0 at 90% -10%);
     transition: all 1s ease-out;
@@ -181,7 +176,7 @@ ul {
 }
 
 .collapsible {
-  background-color: #6c757d;
+  background: linear-gradient(to right, #6c757d 0%, var(--color-primary) 100%);
   color: var(--color-link);
   text-decoration: none;
   cursor: pointer;
@@ -190,26 +185,76 @@ ul {
   border: none;
   text-align: center;
   font-size: 1em;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   margin-bottom: 0.5em;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-weight: 600;
 }
 
 .collapsible:hover,
 .collapsible:focus {
-  background-color: var(--color-primary);
-  transition: background-color 0.3s ease;
+  background: linear-gradient(to right, var(--color-primary) 0%, #3c3c3c 100%);
+  color: var(--color-font);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   outline: none;
 }
 
 .collapsible.active {
+  background: linear-gradient(to right, var(--color-primary) 0%, #3c3c3c 100%);
+  color: var(--color-font);
+}
+
+.collapsible-content {
+  padding: var(--padding-base);
   background-color: var(--color-primary);
+  color: var(--color-font);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: max-height 0.2s ease-out;
+  overflow: hidden;
+  font-family: var(--primary-font);
+}
+
+.collapsible-content h2 {
+  font-size: var(--font-size-large);
+  color: var(--color-link);
+  margin-bottom: 10px;
+}
+
+.collapsible-content h3 {
+  font-size: var(--font-size-base);
+  color: var(--color-link-hover);
+  margin-bottom: 10px;
+}
+
+.collapsible-content p {
+  font-size: var(--font-size-base);
+  line-height: 1.5em;
+  margin-bottom: 10px;
+}
+
+.collapsible-content ul {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.collapsible-content li {
+  margin-bottom: 5px;
+  font-size: var(--font-size-base);
+}
+
+.collapsible-content img {
+  max-width: 100%;
+  height: auto;
 }
 
 .content {
   padding: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #343a40;
+  background-color: var(--color-primary);
   max-height: 0;
   color: var(--color-font);
 }
@@ -345,3 +390,6 @@ blockquote footer {
     padding: 0 calc(var(--padding-base) * 4);
   }
 }
+
+
+/* HERE WE TRY THE NEW CSS!!! */
