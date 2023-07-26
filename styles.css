@@ -217,17 +217,19 @@ ul {
 }
 
 .project-image {
-  width: 22.5em;
-  height: 14.1875em;
+  width: 21.5em;
+  object-fit: cover;
   display: block;
   margin: 0 auto;
 }
+
+/* lower the spaced vertically in the project-grid */
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   justify-content: center;
-  grid-gap: 5em;
+  grid-gap: 2em;
 }
 
 .project {
@@ -239,6 +241,10 @@ ul {
   padding: var(--padding-base);
   max-width: 90%;
   margin: 0 auto;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .section-image {
