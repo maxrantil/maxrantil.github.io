@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const coll = document.getElementsByClassName("collapsible");
 
   [...coll].forEach(collapsible => {
-    collapsible.addEventListener("click", function() {
+    collapsible.addEventListener("click", function () {
       this.classList.toggle("active");
       let content = this.nextElementSibling;
       content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
@@ -101,14 +101,17 @@ document.addEventListener("DOMContentLoaded", () => {
         case "home":
           topOffset = 40;
           break;
+        case "about":
+          topOffset = 160;
+          break;
         case "education":
-          topOffset = 60;
+          topOffset = 80;
           break;
         case "projects":
-          topOffset = 110;
+          topOffset = 90;
           break;
         case "work-experience":
-          topOffset = 60;
+          topOffset = 70;
           break;
         default:
           topOffset = 40;
