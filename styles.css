@@ -1,10 +1,14 @@
 :root {
   --color-bg: #1A202C;
+  --color-light-bg: #E2E8F0;
   --color-primary: #2D3748;
   --color-font: #EDF2F7;
+  --color-secondary-font: #A0AEC0;
   --color-link: #38B2AC;
+  --color-link-contact: #1565C0;
   --color-link-hover: #389697;
   --color-link-focus: #2C7A7B;
+  --color-accent: #FF6347;
   --font-size-base: 1rem;
   --font-size-large: 2rem;
   --font-size-small: 0.75rem;
@@ -46,10 +50,22 @@ header {
   padding: calc(var(--padding-base) * 0.4);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.contact-links a {
+  color: var(--color-link-contact);
+  transition: color 0.3s ease;
+}
+
+.contact-links a:hover,
+.contact-links a:focus {
+  color: var(--color-link-hover);
+  outline: none;
 }
 
 .profile-image img {
@@ -264,6 +280,11 @@ ul {
   padding: 0 1.125em;
 }
 
+.content li {
+  margin: 0.5em 0;
+  padding: 0 2em;
+}
+
 @keyframes bounce {
 
   0%,
@@ -285,7 +306,7 @@ ul {
   grid-template-columns: repeat(1, 1fr);
   justify-content: center;
   grid-gap: 1em;
-  width: 60vw; /* Full viewport width */
+  width: 60vw;
   position: relative;
   left: 50%;
   right: 50%;
@@ -307,6 +328,7 @@ ul {
 
 .project {
   text-align: center;
+  position: relative;
   /* max-width: 18.75em; */
   /* margin: 0 auto; */
 }
@@ -321,11 +343,58 @@ ul {
   text-align: left;
 }
 
-.section-image {
+.section-image-hive {
   width: 50%;
   height: 50%;
   display: block;
   margin: 0 auto;
+}
+/* .section-image-studium {
+  width: 12rem;
+  display: block;
+  margin: 0 auto;
+}
+.section-image-gbg {
+  width: 10rem;
+  transform: translateY(70px);
+  display: block;
+  margin: 0 auto;
+}
+.section-image-gbg {
+  width: 10rem;
+  display: block;
+  margin: 0 auto;
+}
+.section-image-hassel {
+  width: 12rem;
+  transform: translateY(90px);
+  display: block;
+  margin: 0 auto;
+} */
+.grid-container {
+  display: block;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 20px;
+}
+
+.job-title {
+  font-size: 1.3em;
+  color: var(--color-link-hover);
+  font-weight: bold;
+}
+.company {
+  font-size: 1em;
+  color: var(--color-font);
+  font-weight: bold;
+}
+.location {
+  font-size: 1em;
+  color: var(--color-font);
+}
+.job-date {
+  font-size: 0.8em;
+  color: var(--color-link);
 }
 
 blockquote {
@@ -360,6 +429,12 @@ blockquote footer {
   margin: 0 auto;
   font-size: 0.625em;
 }
+
+#education, #work-experience {
+  width: 100%; /* adjust as needed */
+  margin: 0 auto; /* centers the section */
+}
+
 
 @media (max-width: 539.98px) {
   body {
@@ -396,6 +471,3 @@ blockquote footer {
     padding: 0 calc(var(--padding-base) * 4);
   }
 }
-
-
-/* HERE WE TRY THE NEW CSS!!! */
