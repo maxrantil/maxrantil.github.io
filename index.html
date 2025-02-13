@@ -76,17 +76,11 @@
             ensure the successful delivery of complex projects.</p>
 
           <p>My dedication to collaboration and making a significant impact is enriched by my experiences as a youth
-            worker and photographer in Sweden, where I developed more <em>empathy</em>, <em>patience</em> and
+            worker and photographer in Sweden, where I developed more <em>patience</em> and
             <em>understanding</em> of diverse perspectives. This combination of <strong>technical skills</strong> and
             <strong>interpersonal understanding</strong> shapes my approach to software development.
           </p>
 
-          <p>My ultimate ambition is to leverage these proficiencies to become a team-member at any forward-thinking
-            software development organization. I aim to create <strong>impactful solutions</strong> in the tech industry
-            through developing innovative software, improving user experiences, and solving complex problems. I am
-            driven by the conviction that through technology, we can shape a <strong>brighter</strong> and more
-            <strong>inclusive future</strong> for all.
-          </p>
         </div>
       </section>
 
@@ -382,81 +376,96 @@
       <section id="testimonials">
         <h1>Testimonials</h1>
         <blockquote>
-          <p>Max is great fellow student and showed great leadership as we finished last inner circle project 42sh
-            together. I really enjoyed working with Max. He was one of the main characters to drive our last project to
-            its goal. Technical and soft skills is in pro level, I would recommend Max to any task which requires good
-            problem solving skills and/or great leadership.”</p>
-          <footer>- Miika Viinikainen, Laboratory Technician @ Borealis Polymers Oy</footer>
+          <p>Max was a pleasure to work with on the peer alternate address feature. He was eager to contribute and not
+            afraid to dig deep into the internals of core lightning's interdaemon communication and wire architecture.
+            I appreciate that he is always open to feedback and ready to refactor code for the sake of a better product
+            or cleaner implementation. I think it shows in the final product, including the extensive coverage of blackbox
+            testing he developed. I hope he will continue to contribute to core lightning and the lightning ecosystem and
+            finds a more permanent position to do so. I will certainly be advocating for him.</p>
+          <footer>- Alex Myers, Core Lightning Protocol Developer, Blockstream</footer>
         </blockquote>
         <blockquote>
           <p>...Reliability is one of Max's defining characteristics. He possesses an unwavering commitment to his work
             and is always reliable when it comes to meeting deadlines and delivering high-quality results. Regardless of
             the complexity or urgency of the task at hand, Max can be counted on to go above and beyond
             expectations....”</p>
-          <footer>- Michel Philippe, Graduate at Hive Helsinki</footer>
+          <footer>- Michel Philippe, Fellow graduate at Hive Helsinki</footer>
+        </blockquote>
+        <blockquote>
+          <p>Max is great fellow student and showed great leadership as we finished last inner circle project 42sh
+            together. I really enjoyed working with Max. He was one of the main characters to drive our last project to
+            its goal. Technical and soft skills is in pro level, I would recommend Max to any task which requires good
+            problem solving skills and/or great leadership.”</p>
+          <footer>- Miika Viinikainen, Fellow graduate at Hive Helsinki</footer>
         </blockquote>
       </section>
 
       <hr>
 
-      <section id="education" aria-label="Education Section">
-        <div>
-          <h1>Education</h1>
-          <a href="https://www.hive.fi/en/" class="link-external" aria-label="Link to Hive Helsinki official website">
-            <img src="./images/hive.jpg" alt="Helsinki Hive Logo" class="section-image-hive">
-          </a>
-          <p class="job-title">
-            <strong>Programming</strong>
-          </p>
-          <p>
-            <span class="company"><a href="https://www.hive.fi/en/" class="link-external"
-                aria-label="Link to Hive Helsinki official website">Hive</a>,</span>
-            <span class="location">Helsinki, Finland</span>
-            <span class="job-date">(Oct. 2021 - March 2023)</span>
-          </p>
-          <ul>
-            <li>Cultivated robust problem-solving skills and fostered self-reliance through tackling complex programming
-              challenges.</li>
-            <li>Applied programming knowledge to real-world scenarios, gaining practical experience in software
-              development and debugging.</li>
-            <li>Participated in a collaborative learning environment that emphasized peer-to-peer knowledge exchange,
-              leading to an enriched understanding of diverse problem-solving approaches.</li>
-          </ul>
-          <br>
-          <!-- <a href="https://studiumgbg.se/" class="link-external" aria-label="Link to Studium official website"> -->
-          <!-- <img src="./images/studium.png" alt="Studium Logo" class="section-image-studium"> -->
-          <!-- </a> -->
-          <p class="job-title">
-            <strong>Support Worker</strong>
-          </p>
-          <p>
-            <span class="company"><a href="https://studiumgbg.se/" class="link-external"
-                aria-label="Link to Studium official website">Studium</a>,</span>
-            <span class="location">Gothenburg, Sweden</span>
-            <span class="job-date">(Oct. 2017 - Oct. 2018)</span>
-          </p>
-          <ul>
-            <li>Trained to provide specialized support to individuals with a range of abilities, adapting strategies to
-              meet unique needs.</li>
-            <li>Acquired practical skills in communication, empathy, and problem-solving, thereby enhancing my capacity
-              to support and uplift individuals in their daily lives.</li>
-            <li>Cultivated a deep understanding of the diverse needs of individuals with varying abilities, fostering an
-              inclusive and supportive environment.</li>
-          </ul>
-        </div>
-      </section>
-
-      <br>
-      <hr>
-
       <section id="work-experience" aria-label="Work Experience Section">
-        <!-- <div> -->
         <h1>Work Experience</h1>
 
         <div class="grid-container">
-          <!-- <a href="https://goteborg.se/" class="link-external" aria-label="Link to Goteborg official website"> -->
-          <!-- <img src="./images/gbg_stad.png" alt="Goteborg City Logo" class="section-image-gbg"> -->
-          <!-- </a> -->
+          <div>
+            <p class="job-title">
+              <strong>Open Source Contributer</strong>
+            </p>
+            <p>
+              <span class="company"><a href="https://github.com/ElementsProject/lightning" class="link-external"
+                  aria-label="Link to Core Lightning github repository">Core Lightning</a>,</span>
+              <span class="location">Remote</span>
+            </p>
+            <div>
+              Contributed to Core Lightning (CLN), Blockstream’s Lightning Network implementation,
+              by strengthening peer connection privacy and reliability. Introduced secure exchange of
+              alternative network addresses outside the public gossip protocol, enabling private peer
+              reconnection channels.
+            </div>
+            <ul>
+              <li>Overhauled the C codebase and daemon logic to store and utilize alternative addresses
+                for resilient peer reconnections</li>
+              <li>Designed configurable whitelisting parameters for granular control of address-sharing behavior</li>
+              <li>Extended gossip protocol functionality to support private peer discovery mechanisms</li>
+              <li>Developed and documented new JSON-RPC API endpoints for managing private channel configurations,
+                enabling more flexible peer-to-peer connection strategies</li>
+            </ul>
+          </div>
+        </div>
+
+      <br>
+
+        <div class="grid-container">
+          <div>
+            <p class="job-title">
+              <strong>Open Source Developer Intern</strong>
+            </p>
+            <p>
+              <span class="company"><a href="https://www.ericsson.com/" class="link-external"
+                  aria-label="Link to Ericsson official website">Ericsson</a>,</span>
+              <span class="location">Jorvas, Finland</span>
+              <span class="job-date">(Oct. 2023 - April 2024)</span>
+            </p>
+            <div>
+              Contributed to Metal³ (Metal Kubed), a CNCF project that enables Kubernetes to manage bare metal
+              infrastructure in a cloud-native way. The project integrates with Cluster API to provide
+              declarative lifecycle management of physical servers, treating bare metal machines as cloud resources.
+            </div>
+            <ul>
+              <li>Led the modernization of deployment infrastructure by migrating critical shell scripts to Go,
+                implementing deploy-cli.go to enhance maintainability and provide type-safe deployment operations</li>
+              <li>Strengthened system reliability by developing end-to-end testing suite for bare metal provisioning,
+                including SSH key-based authentication and structured serial log verification for improved debugging capabilities</li>
+              <li>Implemented critical security features including namespace pod security policies and Metal³machine
+                finalizers, preventing resource conflicts and data loss during bare metal operations</li>
+              <li>Enhanced developer experience through Tilt integration with Cluster API Provider OpenStack,
+                significantly reducing setup time and improving the development workflow</li>
+            </ul>
+          </div>
+        </div>
+
+      <br>
+
+        <div class="grid-container">
           <div>
             <p class="job-title">
               <strong>Youth Worker</strong>
@@ -482,38 +491,36 @@
           </div>
         </div>
 
-        <br>
-
-        <div>
-          <p class="job-title">
-            <strong>Freelance Photographer</strong>
-          </p>
-          <p>
-            <span class="company">Self-Employed,</span>
-            <span class="location">Gothenburg, Sweden</span>
-            <span class="job-date">(June 2012 - March 2021)</span>
-          </p>
-          <ul>
-            <li>Developed comprehensive visual narratives, which included photographing for diverse projects, spanning
-              both
-              exhibitions and photobooks.</li>
-            <li>Managed every stage of self-publishing projects, from concept creation to final distribution, for five
-              photobooks.</li>
-            <li>Executed a notable project 'Berliner Luft' based in Berlin, Germany, where I captured, developed, and
-              presented a unique perspective of the city through a self-published photobook.</li>
-            <li>Organized an exhibition on Kolkata, drawing from a rich three-month long photographic exploration of
-              the
-              city.</li>
-          </ul>
-        </div>
-
-        <br>
+      <br>
 
         <div class="grid-container">
-          <!-- <a href="https://www.hasselbladfoundation.org/" class="link-external" -->
-          <!-- aria-label="Link to hasselbladfoundation official website"> -->
-          <!-- <img src="./images/hasselblad.png" alt="Hasselblad Logo" class="section-image-gbg"> -->
-          <!-- </a> -->
+          <div>
+            <p class="job-title">
+              <strong>Freelance Photographer</strong>
+            </p>
+            <p>
+              <span class="company">Self-Employed,</span>
+              <span class="location">Gothenburg, Sweden</span>
+              <span class="job-date">(June 2012 - March 2021)</span>
+            </p>
+            <ul>
+              <li>Developed comprehensive visual narratives, which included photographing for diverse projects, spanning
+                both
+                exhibitions and photobooks.</li>
+              <li>Managed every stage of self-publishing projects, from concept creation to final distribution, for five
+                photobooks.</li>
+              <li>Executed a notable project 'Berliner Luft' based in Berlin, Germany, where I captured, developed, and
+                presented a unique perspective of the city through a self-published photobook.</li>
+              <li>Organized an exhibition on Kolkata, drawing from a rich three-month long photographic exploration of
+                the
+                city.</li>
+            </ul>
+          </div>
+        </div>
+
+      <br>
+
+        <div class="grid-container">
           <div>
             <p class="job-title">
               <strong>Exhibition Technician</strong>
@@ -629,6 +636,53 @@
 
       <hr>
 
+      <section id="education" aria-label="Education Section">
+        <div>
+          <h1>Education</h1>
+          <a href="https://www.hive.fi/en/" class="link-external" aria-label="Link to Hive Helsinki official website">
+            <img src="./images/hive.jpg" alt="Helsinki Hive Logo" class="section-image-hive">
+          </a>
+          <p class="job-title">
+            <strong>Programming</strong>
+          </p>
+          <p>
+            <span class="company"><a href="https://www.hive.fi/en/" class="link-external"
+                aria-label="Link to Hive Helsinki official website">Hive</a>,</span>
+            <span class="location">Helsinki, Finland</span>
+            <span class="job-date">(Oct. 2021 - March 2023)</span>
+          </p>
+          <ul>
+            <li>Cultivated robust problem-solving skills and fostered self-reliance through tackling complex programming
+              challenges.</li>
+            <li>Applied programming knowledge to real-world scenarios, gaining practical experience in software
+              development and debugging.</li>
+            <li>Participated in a collaborative learning environment that emphasized peer-to-peer knowledge exchange,
+              leading to an enriched understanding of diverse problem-solving approaches.</li>
+          </ul>
+          <br>
+          <p class="job-title">
+            <strong>Support Worker</strong>
+          </p>
+          <p>
+            <span class="company"><a href="https://studiumgbg.se/" class="link-external"
+                aria-label="Link to Studium official website">Studium</a>,</span>
+            <span class="location">Gothenburg, Sweden</span>
+            <span class="job-date">(Oct. 2017 - Oct. 2018)</span>
+          </p>
+          <ul>
+            <li>Trained to provide specialized support to individuals with a range of abilities, adapting strategies to
+              meet unique needs.</li>
+            <li>Acquired practical skills in communication, empathy, and problem-solving, thereby enhancing my capacity
+              to support and uplift individuals in their daily lives.</li>
+            <li>Cultivated a deep understanding of the diverse needs of individuals with varying abilities, fostering an
+              inclusive and supportive environment.</li>
+          </ul>
+        </div>
+      </section>
+
+      <br>
+      <hr>
+
       <section id="connect">
         <h1>Let's Connect</h1>
         <p class="contact-links">I'm always open to discussing job opportunities, collaboration, or anything else. Feel
@@ -641,18 +695,6 @@
       </section>
 
       <footer>
-        <!-- <p>Feel free to reach out to me through the following channels:</p>
-        <p>Contact:
-          <a href="mailto:portfolio.yn79c@simplelogin.com" title="Send an email to Max Rantil"
-            aria-label="Email">Email</a> |
-          <a href="https://github.com/maxrantil" title="Link to Max Rantil's GitHub profile" class="link-external"
-            aria-label="GitHub">GitHub</a> |
-          <a href="https://www.linkedin.com/in/maxrantil" title="Link to Max Rantil's LinkedIn profile"
-            class="link-external" aria-label="LinkedIn">LinkedIn</a> |
-          <a href="https://www.canva.com/design/DAFnGdFegCs/9V-Xdn7FXAdEoxji-CKHFw/view#1" title="Watch my Resume"
-            class="link-external" aria-label="Resume">Resume</a>
-        </p> -->
-        <!-- <p class="copyright">&copy; 2023 Max Rantil. All rights reserved.</p> -->
       </footer>
     </div>
     <script src="./script.js"></script>
